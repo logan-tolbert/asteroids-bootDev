@@ -13,7 +13,8 @@ def main():
             if event.type == pygame.QUIT:
                 return
         screen.fill((0, 0, 0))
-        player.draw(screen) 
+        player.draw(screen)
+        player.update(dt)
         pygame.display.flip()
               
     # print("Starting asteroids!")
