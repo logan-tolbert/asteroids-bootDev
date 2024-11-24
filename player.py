@@ -43,7 +43,7 @@ class Player(CircleShape):
             self.shoot()
 
     def shoot(self):
-        if self.shoot_timer > 0:
+        if self.shot_timer > 0:
             return
         self.shoot_timer = PLAYER_SHOOT_COOLDOWN
         bullet = Shot(self.position.x, self.position.y)
